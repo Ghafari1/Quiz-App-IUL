@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_create"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif"
+        android:text="Create Your Quiz"
+        android:textColor="#304FFE"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif"
+        android:text="Quiz Title"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:paddingHorizontal="25dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        tools:ignore="RelativeOverlap">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:layout_gravity="center"
+            android:id="@+id/quizTitle"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:hint="Select Size"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--        tools:ignore="RelativeOverlap">-->
+
+<!--        <AutoCompleteTextView-->
+<!--            android:id="@+id/auto_complete_txt"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:inputType="none"-->
+<!--            android:textSize="12sp" />-->
+
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="25dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 1: (mark one checkbox for the correct answer)"
+            android:textSize="14sp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="RelativeOverlap">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Question"
+                android:id="@+id/Question1"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentStart="true"
+                android:id="@+id/answerGroup1">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Answer 1"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Answer 2"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Answer 3"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Answer 4" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/rg1">
+
+                <RadioButton
+                    android:layout_width="80dp"
+                    android:layout_height="65dp"
+                    />
+
+                <RadioButton
+                    android:layout_width="80dp"
+                    android:layout_height="65dp"
+                    />
+
+                <RadioButton
+                    android:layout_width="80dp"
+                    android:layout_height="65dp"
+                    />
+
+                <RadioButton
+                    android:layout_width="80dp"
+                    android:layout_height="65dp"
+                    />
+
+            </RadioGroup>
+        </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="25dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 2: (mark one checkbox for the correct answer)"
+            android:textSize="14sp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="RelativeOverlap">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Question"
+                android:id="@+id/Question2"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentStart="true"
+                android:id="@+id/answerGroup2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Answer 1"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Answer 2"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Answer 3"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Answer 4" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/rg2">
+
+                <RadioButton
+                    android:layout_width="80dp"
+                    android:layout_height="65dp"
+                    />
+
+                <RadioButton
+                    android:layout_width="80dp"
+                    android:layout_height="65dp"
+                    />
+
+                <RadioButton
+                    android:layout_width="80dp"
+                    android:layout_height="65dp"
+                    />
+
+                <RadioButton
+                    android:layout_width="80dp"
+                    android:layout_height="65dp"
+                    />
+
+            </RadioGroup>
+        </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="25dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 3: (mark one checkbox for the correct answer)"
+            android:textSize="14sp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="RelativeOverlap">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Question"
+                android:id="@+id/Question3"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentStart="true"
+                android:id="@+id/answerGroup3">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Answer 1"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Answer 2"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Answer 3"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Answer 4" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/rg3">
+
+                <RadioButton
+                    android:layout_width="80dp"
+                    android:layout_height="65dp"
+                    />
+
+                <RadioButton
+                    android:layout_width="80dp"
+                    android:layout_height="65dp"
+                    />
+
+                <RadioButton
+                    android:layout_width="80dp"
+                    android:layout_height="65dp"
+                    />
+
+                <RadioButton
+                    android:layout_width="80dp"
+                    android:layout_height="65dp"
+                    />
+
+            </RadioGroup>
+        </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="25dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 4: (mark one checkbox for the correct answer)"
+            android:textSize="14sp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="RelativeOverlap">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Question"
+                android:id="@+id/Question4"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentStart="true"
+                android:id="@+id/answerGroup4">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Answer 1"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Answer 2"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Answer 3"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Answer 4" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/rg4">
+
+                <RadioButton
+                    android:layout_width="80dp"
+                    android:layout_height="65dp"
+                    />
+
+                <RadioButton
+                    android:layout_width="80dp"
+                    android:layout_height="65dp"
+                    />
+
+                <RadioButton
+                    android:layout_width="80dp"
+                    android:layout_height="65dp"
+                    />
+
+                <RadioButton
+                    android:layout_width="80dp"
+                    android:layout_height="65dp"
+                    />
+
+            </RadioGroup>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Create"
+        app:cornerRadius="0dp"
+        android:id="@+id/createBtn"/>
+
+
+</LinearLayout>
+
+</ScrollView>

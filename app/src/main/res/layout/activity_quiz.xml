@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_quiz">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="144dp"
+        android:src="@drawable/wave" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/question"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
+        android:text="Question is typed here, question"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="280dp"
+        android:id="@+id/answerA"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Answer A"
+        app:cornerRadius="0dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="280dp"
+        android:id="@+id/answerB"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Answer B"
+        app:cornerRadius="0dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="280dp"
+        android:id="@+id/answerC"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Answer C"
+        app:cornerRadius="0dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="280dp"
+        android:id="@+id/answerD"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Answer D"
+        app:cornerRadius="0dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="150dp"
+        android:id="@+id/loadNext"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Next"
+        app:cornerRadius="0dp" />
+
+</LinearLayout>
