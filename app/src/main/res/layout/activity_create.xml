@@ -7,6 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity_create"
+    android:background="@color/white"
     >
 <LinearLayout
     android:layout_width="match_parent"
@@ -34,22 +35,22 @@
         android:textSize="18sp" />
 
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginBottom="20dp"
         android:paddingHorizontal="25dp">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+
         tools:ignore="RelativeOverlap">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:hint="Title"
-            android:layout_gravity="center"
             android:id="@+id/quizTitle"
             />
 
@@ -121,7 +122,7 @@
                     tools:ignore="RelativeOverlap">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="280dp"
+                        android:layout_width="260dp"
                         android:layout_height="wrap_content"
                         android:hint="Answer 1"
                         />
@@ -134,7 +135,7 @@
                     tools:ignore="RelativeOverlap">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="280dp"
+                        android:layout_width="260dp"
                         android:layout_height="wrap_content"
                         android:hint="Answer 2"
                         />
@@ -147,7 +148,7 @@
                     tools:ignore="RelativeOverlap">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="280dp"
+                        android:layout_width="260dp"
                         android:layout_height="wrap_content"
                         android:hint="Answer 3"
                         />
@@ -160,7 +161,7 @@
                     tools:ignore="RelativeOverlap">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="280dp"
+                        android:layout_width="260dp"
                         android:layout_height="wrap_content"
                         android:hint="Answer 4" />
 
@@ -178,6 +179,7 @@
                 <RadioButton
                     android:layout_width="80dp"
                     android:layout_height="65dp"
+                    android:checked="true"
                     />
 
                 <RadioButton
@@ -249,7 +251,7 @@
                     tools:ignore="RelativeOverlap">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="280dp"
+                        android:layout_width="260dp"
                         android:layout_height="wrap_content"
                         android:hint="Answer 1"
                         />
@@ -262,7 +264,7 @@
                     tools:ignore="RelativeOverlap">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="280dp"
+                        android:layout_width="260dp"
                         android:layout_height="wrap_content"
                         android:hint="Answer 2"
                         />
@@ -275,7 +277,7 @@
                     tools:ignore="RelativeOverlap">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="280dp"
+                        android:layout_width="260dp"
                         android:layout_height="wrap_content"
                         android:hint="Answer 3"
                         />
@@ -288,7 +290,7 @@
                     tools:ignore="RelativeOverlap">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="280dp"
+                        android:layout_width="260dp"
                         android:layout_height="wrap_content"
                         android:hint="Answer 4" />
 
@@ -306,6 +308,7 @@
                 <RadioButton
                     android:layout_width="80dp"
                     android:layout_height="65dp"
+                    android:checked="true"
                     />
 
                 <RadioButton
@@ -377,7 +380,7 @@
                     tools:ignore="RelativeOverlap">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="280dp"
+                        android:layout_width="260dp"
                         android:layout_height="wrap_content"
                         android:hint="Answer 1"
                         />
@@ -390,7 +393,7 @@
                     tools:ignore="RelativeOverlap">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="280dp"
+                        android:layout_width="260dp"
                         android:layout_height="wrap_content"
                         android:hint="Answer 2"
                         />
@@ -403,7 +406,7 @@
                     tools:ignore="RelativeOverlap">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="280dp"
+                        android:layout_width="260dp"
                         android:layout_height="wrap_content"
                         android:hint="Answer 3"
                         />
@@ -416,7 +419,7 @@
                     tools:ignore="RelativeOverlap">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="280dp"
+                        android:layout_width="260dp"
                         android:layout_height="wrap_content"
                         android:hint="Answer 4" />
 
@@ -434,6 +437,7 @@
                 <RadioButton
                     android:layout_width="80dp"
                     android:layout_height="65dp"
+                    android:checked="true"
                     />
 
                 <RadioButton
@@ -505,7 +509,7 @@
                     tools:ignore="RelativeOverlap">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="280dp"
+                        android:layout_width="260dp"
                         android:layout_height="wrap_content"
                         android:hint="Answer 1"
                         />
@@ -518,7 +522,7 @@
                     tools:ignore="RelativeOverlap">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="280dp"
+                        android:layout_width="260dp"
                         android:layout_height="wrap_content"
                         android:hint="Answer 2"
                         />
@@ -531,7 +535,7 @@
                     tools:ignore="RelativeOverlap">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="280dp"
+                        android:layout_width="260dp"
                         android:layout_height="wrap_content"
                         android:hint="Answer 3"
                         />
@@ -544,7 +548,7 @@
                     tools:ignore="RelativeOverlap">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="280dp"
+                        android:layout_width="260dp"
                         android:layout_height="wrap_content"
                         android:hint="Answer 4" />
 
@@ -562,6 +566,7 @@
                 <RadioButton
                     android:layout_width="80dp"
                     android:layout_height="65dp"
+                    android:checked="true"
                     />
 
                 <RadioButton

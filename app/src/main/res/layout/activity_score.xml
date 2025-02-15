@@ -6,12 +6,15 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".activity_score">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="500dp"
-        android:src="@drawable/trophy" />
+        android:layout_gravity="center"
+        android:id="@+id/win_award"
+        android:src="@drawable/def_win" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -19,7 +22,7 @@
         android:id="@+id/score"
         android:layout_gravity="center"
         android:textSize="25sp"
-        android:text="Score: 25"/>
+        android:text="Score: ---"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,14 +31,16 @@
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
         android:textSize="25sp"
-        android:text="Correct Answers: 4/4"/>
+        android:text="Correct Answers: -/4"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:enabled="false"
         android:id="@+id/restBtn"
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
         android:text="Return To Menu"
         app:cornerRadius="0dp" />
+
 </LinearLayout>

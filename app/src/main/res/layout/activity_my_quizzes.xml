@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:background="@color/white"
     android:layout_marginVertical="25dp"
-    tools:context=".activity_quiz_menu">
+    tools:context=".activity_myQuizzes">
 
     <TextView
         android:layout_width="wrap_content"
@@ -16,7 +16,7 @@
         android:layout_gravity="center"
         android:layout_marginVertical="10dp"
         android:fontFamily="sans-serif"
-        android:text="Select Your Quiz"
+        android:text="Test Your Quiz"
         android:textColor="#304FFE"
         android:textSize="25sp" />
 
@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:id="@+id/quiz_menu_loading"
+        android:id="@+id/myQuiz_menu_loading"
         />
 
 </LinearLayout>
